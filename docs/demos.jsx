@@ -38,7 +38,7 @@ export default class App extends React.Component {
     return (
       <div className='content'>
         <SimpleSlider />
-        <MultipleItems />
+        {/* <MultipleItems />
         <MultipleRows />
         <Responsive />
         <Resizable />
@@ -65,7 +65,7 @@ export default class App extends React.Component {
         <SwipeToSlide />
         <VerticalSwipeToSlide />
         <AsNavFor />
-        <AppendDots />
+        <AppendDots /> */}
       </div>
     );
   }
