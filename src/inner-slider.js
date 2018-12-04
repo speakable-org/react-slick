@@ -662,7 +662,9 @@ export class InnerSlider extends React.Component {
       "slidesToShow",
       "prevArrow",
       "nextArrow",
-      "preventFinalSlideAdvance"
+      "preventFinalSlideAdvance",
+      "enableLabels",
+      "label"
     ]);
     arrowProps.clickHandler = this.changeSlide;
 
