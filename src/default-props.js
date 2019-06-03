@@ -2,7 +2,6 @@ import React from "react";
 
 var defaultProps = {
   accessibility: true,
-  enableLabels: false,
   adaptiveHeight: false,
   afterChange: null,
   appendDots: dots => <ul style={{ display: "block" }}>{dots}</ul>,
@@ -14,12 +13,14 @@ var defaultProps = {
   centerPadding: "50px",
   className: "",
   cssEase: "ease",
+  changeSlideOffsetLast: 0,
   customPaging: i => <button>{i + 1}</button>,
   dots: false,
   dotsClass: "slick-dots",
   draggable: true,
   easing: "linear",
   edgeFriction: 0.35,
+  enableLabels: false,
   fade: false,
   focusOnSelect: false,
   infinite: true,
