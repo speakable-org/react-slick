@@ -409,6 +409,8 @@ export class InnerSlider extends React.Component {
   changeSlide = (options, dontAnimate = false) => {
     const spec = { ...this.props, ...this.state };
     let targetSlide = changeSlide(spec, options);
+    if (spec.preventFinalSlideWhitespace && spec.slideCount - 1 === targetSlide)
+      targetSlide--;
     if (targetSlide !== 0 && !targetSlide) return;
     if (dontAnimate === true) {
       this.slideHandler(targetSlide, dontAnimate);

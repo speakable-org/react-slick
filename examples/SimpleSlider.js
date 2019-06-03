@@ -8,13 +8,14 @@ export default class SimpleSlider extends Component {
       centerMode: false,
       dots: true,
       draggabe: true,
-      focusOnSelect: false,
+      focusOnSelect: true,
       infinite: false,
       slidesToScroll: 1,
       slidesToShow: 1.5,
       speed: 500,
       swipeToSlide: true,
-      preventFinalSlideAdvance: true
+      preventFinalSlideAdvance: true,
+      preventFinalSlideWhitespace: true
     };
     return (
       <div>

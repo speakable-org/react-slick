@@ -34,6 +34,7 @@ var defaultProps = {
   pauseOnFocus: false,
   pauseOnHover: true,
   prevArrow: null,
+  preventFinalSlideWhitespace: false,
   responsive: null,
   rows: 1,
   rtl: false,
