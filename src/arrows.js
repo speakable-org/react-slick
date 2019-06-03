@@ -45,8 +45,7 @@ export class PrevArrow extends React.PureComponent {
     } else {
       prevArrow = (
         <button key="0" type="button" {...prevArrowProps}>
-          {" "}
-          Previous
+          {this.props.enableLabels === true ? ` ${this.props.label}` : ``}
         </button>
       );
     }
@@ -92,8 +91,7 @@ export class NextArrow extends React.PureComponent {
     } else {
       nextArrow = (
         <button key="1" type="button" {...nextArrowProps}>
-          {" "}
-          Next
+          {this.props.enableLabels === true ? ` ${this.props.label}` : ``}
         </button>
       );
     }

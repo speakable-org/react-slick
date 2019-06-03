@@ -4,11 +4,17 @@ import Slider from "../src/slider";
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
+      arrows: true,
+      centerMode: false,
       dots: true,
-      infinite: true,
+      draggabe: true,
+      focusOnSelect: false,
+      infinite: false,
+      slidesToScroll: 1,
+      slidesToShow: 1.5,
       speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      swipeToSlide: true,
+      preventFinalSlideAdvance: true
     };
     return (
       <div>
